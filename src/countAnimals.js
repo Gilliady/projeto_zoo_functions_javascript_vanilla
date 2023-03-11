@@ -18,5 +18,5 @@ const countAnimals = (animal) => {
         .filter((actualAnimal) => actualAnimal.sex === animal.sex).length;
   }
 };
-
+console.log(countAnimals({ species: 'elephants', sex: 'male' }));
 module.exports = countAnimals;
