@@ -27,7 +27,6 @@ const getAnimalMap = (options) => {
   if (options.sex !== undefined) {
     animalMap = filterIncludesNameAndSex(options.sex);
   }
-
   if (options.sorted) {
     Object.keys(animalMap).forEach((orientation, index) => {
       (animalMap[orientation].map((animal) => {
@@ -38,5 +37,4 @@ const getAnimalMap = (options) => {
   }
   return animalMap;
 };
-console.log(getAnimalMap({ includeNames: true, sex: 'male', sorted: true }));
 module.exports = getAnimalMap;
